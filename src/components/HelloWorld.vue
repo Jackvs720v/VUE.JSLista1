@@ -1,15 +1,18 @@
 <template>
   <div class="hello">
+    
     <h1>{{ msg }} </h1>
     <p>{{ ola }}</p>
     <p v-if="booleano"><input v-model = "nome" placeholder="Nome: "/></p>
     <p id="nome">Bem vindo {{ nome }}</p>
     <h1>Contador: {{ contador }}</h1>
     <p v-if = "visualizar">{{ viu }}</p>
+
     <button @click="ver">Ocultar</button>
     <button @click="retangulo">Ocultar o campo Nome</button>
     <button @click="incrementar">Incrementar</button>
     <button @click="decrementar">Decrementar</button>
+
   </div>
   <ul>
     <li v-for="item in a" :key="item.text">
